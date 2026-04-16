@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saravanan Gnanaguru - DevOps, Cloud & AI Expert | CloudEngine Labs</title>
-    <meta name="description" content="Professional training sessions on DevOps, Cloud Computing, AI, Security, and Infrastructure by Saravanan Gnanaguru, Founder of CloudEngine Labs">
+    <title>Training Content Portal - Saravanan Gnanaguru | CloudEngine Labs</title>
+    <meta name="description" content="Consolidated training content portal for DevOps, Cloud Computing, and AI materials by Saravanan Gnanaguru">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -26,17 +26,14 @@
             font-family: 'Inter', sans-serif;
         }
         .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
         }
         .card-hover {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .card-hover:hover {
-            transform: translateY(-8px);
+            transform: translateY(-5px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .section-gradient {
-            background: linear-gradient(to bottom right, #f8fafc, #e0e7ff);
         }
     </style>
 </head>
@@ -46,17 +43,16 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <a href="#" class="text-2xl font-bold text-primary">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">CloudEngine Labs</span>
+                    <a href="#" class="text-2xl font-bold">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Training Portal</span>
                     </a>
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#about" class="text-gray-700 hover:text-primary transition">About</a>
-                    <a href="#devops" class="text-gray-700 hover:text-primary transition">DevOps</a>
-                    <a href="#cloud" class="text-gray-700 hover:text-primary transition">Cloud</a>
-                    <a href="#ai" class="text-gray-700 hover:text-primary transition">AI</a>
-                    <a href="#security" class="text-gray-700 hover:text-primary transition">Security</a>
-                    <a href="#infrastructure" class="text-gray-700 hover:text-primary transition">Infrastructure</a>
+                    <a href="#presentations" class="text-gray-700 hover:text-primary transition">Presentations</a>
+                    <a href="#training" class="text-gray-700 hover:text-primary transition">Training</a>
+                    <a href="#blogs" class="text-gray-700 hover:text-primary transition">Blogs</a>
+                    <a href="#resources" class="text-gray-700 hover:text-primary transition">Resources</a>
                 </div>
                 <div class="md:hidden">
                     <button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
@@ -69,703 +65,328 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 rounded">About</a>
-                <a href="#devops" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 rounded">DevOps</a>
-                <a href="#cloud" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 rounded">Cloud</a>
-                <a href="#ai" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 rounded">AI</a>
-                <a href="#security" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 rounded">Security</a>
-                <a href="#infrastructure" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 rounded">Infrastructure</a>
+                <a href="#presentations" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 rounded">Presentations</a>
+                <a href="#training" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 rounded">Training</a>
+                <a href="#blogs" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 rounded">Blogs</a>
+                <a href="#resources" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 rounded">Resources</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="gradient-bg pt-24 pb-20 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row items-center justify-between">
-                <div class="text-white md:w-1/2 mb-10 md:mb-0">
-                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                        Saravanan Gnanaguru
-                    </h1>
-                    <p class="text-xl md:text-2xl mb-4 text-purple-100">Founder & Principal Architect</p>
-                    <p class="text-lg mb-8 text-purple-50 leading-relaxed">
-                        CloudEngine Labs | gsaravanan.dev
-                    </p>
-                    <div class="flex space-x-4 mb-8">
-                        <a href="#about" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg">
-                            Learn More
-                        </a>
-                        <a href="#devops" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition">
-                            View Sessions
-                        </a>
-                    </div>
-                    <div class="flex space-x-6 text-2xl">
-                        <a href="#" class="text-white hover:text-purple-200 transition"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="text-white hover:text-purple-200 transition"><i class="fab fa-github"></i></a>
-                        <a href="#" class="text-white hover:text-purple-200 transition"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-white hover:text-purple-200 transition"><i class="fas fa-globe"></i></a>
-                    </div>
+    <section class="gradient-bg pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="text-white">
+                <div class="mb-6">
+                    <i class="fas fa-book-open text-6xl mb-4 opacity-90"></i>
                 </div>
-                <div class="md:w-1/2 flex justify-center">
-                    <div class="relative">
-                        <div class="w-72 h-72 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                            <div class="w-64 h-64 bg-white/30 rounded-full flex items-center justify-center">
-                                <i class="fas fa-user-tie text-9xl text-white"></i>
-                            </div>
-                        </div>
-                    </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Training Content Portal
+                </h1>
+                <p class="text-xl md:text-2xl mb-4 text-purple-100">
+                    DevOps, Cloud Computing & AI Learning Resources
+                </p>
+                <p class="text-lg mb-8 text-purple-50 max-w-3xl mx-auto">
+                    Consolidated training materials, presentations, and resources by Saravanan Gnanaguru (CloudEngine Labs)
+                </p>
+                <div class="inline-block bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3 text-white border border-white/30">
+                    <i class="fas fa-info-circle mr-2"></i>
+                    <strong>Note:</strong> This is a content reference portal, not a portfolio website
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">About Saravanan</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About This Portal</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Empowering professionals with cutting-edge knowledge in modern technology
+                    A centralized hub for accessing all training materials, presentations, blog posts, and resources
                 </p>
             </div>
-            
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                        Saravanan Gnanaguru is a seasoned technology leader and the founder of <strong>CloudEngine Labs</strong>, 
-                        dedicated to providing world-class training and consulting in DevOps, Cloud Computing, Artificial Intelligence, 
-                        Security, and Infrastructure.
-                    </p>
-                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                        With years of hands-on experience in enterprise architecture and cloud-native technologies, Saravanan has 
-                        helped numerous organizations transform their development practices and accelerate their journey to the cloud.
-                    </p>
-                    <p class="text-lg text-gray-700 leading-relaxed">
-                        His practical, pedagogy-driven approach to teaching makes complex technical concepts accessible to learners 
-                        at all levels, from beginners to advanced practitioners.
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Learning Resources</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Access comprehensive training materials covering DevOps practices, Cloud platforms, and AI/ML technologies with hands-on labs and tutorials.
                     </p>
                 </div>
-                <div class="space-y-6">
-                    <div class="flex items-start space-x-4">
-                        <div class="bg-primary/10 p-4 rounded-lg">
-                            <i class="fas fa-award text-3xl text-primary"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Industry Expert</h3>
-                            <p class="text-gray-600">Years of experience in enterprise technology and cloud architecture</p>
-                        </div>
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl">
+                    <div class="text-secondary text-4xl mb-4">
+                        <i class="fas fa-users-cog"></i>
                     </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="bg-secondary/10 p-4 rounded-lg">
-                            <i class="fas fa-chalkboard-teacher text-3xl text-secondary"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Pedagogy Expert</h3>
-                            <p class="text-gray-600">Proven methodology for making complex concepts easy to understand</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="bg-accent/10 p-4 rounded-lg">
-                            <i class="fas fa-users text-3xl text-accent"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Community Leader</h3>
-                            <p class="text-gray-600">Building a community of passionate technologists and lifelong learners</p>
-                        </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">For Everyone</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Whether you're a beginner or an experienced professional, find resources tailored to your learning journey in modern cloud technologies.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <div class="bg-gray-50 rounded-xl p-8 max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">About the Author</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        <strong>Saravanan Gnanaguru</strong> is the Founder of CloudEngine Labs and an expert in DevOps, Cloud Computing, and Artificial Intelligence. 
+                        With years of experience in technology leadership and training, Saravanan provides world-class content that makes complex technical concepts accessible.
+                    </p>
+                    <div class="flex justify-center space-x-6 text-gray-600">
+                        <a href="https://gsaravanan.dev" target="_blank" class="hover:text-primary transition">
+                            <i class="fas fa-globe mr-2"></i>gsaravanan.dev
+                        </a>
+                        <span>|</span>
+                        <span><i class="fas fa-building mr-2"></i>CloudEngine Labs</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- DevOps Section -->
-    <section id="devops" class="py-20 px-4 sm:px-6 lg:px-8 section-gradient">
+    <!-- Content Categories Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <div class="inline-block bg-blue-100 p-4 rounded-full mb-4">
-                    <i class="fas fa-infinity text-5xl text-primary"></i>
-                </div>
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">DevOps</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Master the art of continuous integration, deployment, and collaboration
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                    <div class="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-code-branch text-3xl text-primary"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">CI/CD Pipelines</h3>
-                    <p class="text-gray-600 mb-4">
-                        Learn to build robust continuous integration and deployment pipelines using Jenkins, GitLab CI, GitHub Actions, and Azure DevOps.
-                    </p>
-                    <ul class="space-y-2 text-gray-700">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Pipeline automation</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Testing strategies</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Deployment patterns</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                    <div class="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fab fa-docker text-3xl text-primary"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Containerization</h3>
-                    <p class="text-gray-600 mb-4">
-                        Deep dive into Docker and Kubernetes for building, deploying, and scaling containerized applications.
-                    </p>
-                    <ul class="space-y-2 text-gray-700">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Docker fundamentals</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Kubernetes orchestration</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Helm charts</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                    <div class="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-tools text-3xl text-primary"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">IaC & Configuration</h3>
-                    <p class="text-gray-600 mb-4">
-                        Automate infrastructure provisioning with Terraform, Ansible, and other Infrastructure as Code tools.
-                    </p>
-                    <ul class="space-y-2 text-gray-700">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Terraform mastery</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Ansible automation</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>GitOps workflows</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Cloud Section -->
-    <section id="cloud" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <div class="inline-block bg-sky-100 p-4 rounded-full mb-4">
-                    <i class="fas fa-cloud text-5xl text-sky-600"></i>
-                </div>
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Cloud Computing</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Harness the power of AWS, Azure, and Google Cloud Platform
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl shadow-lg p-8 card-hover">
-                    <div class="flex items-center mb-6">
-                        <div class="bg-orange-500 w-16 h-16 rounded-lg flex items-center justify-center mr-4">
-                            <i class="fab fa-aws text-3xl text-white"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-900">Amazon Web Services</h3>
-                    </div>
-                    <p class="text-gray-700 mb-6">
-                        Comprehensive training on AWS services including EC2, S3, Lambda, ECS, EKS, RDS, and more. Learn to architect scalable, secure, and cost-effective solutions.
-                    </p>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-white p-4 rounded-lg">
-                            <i class="fas fa-server text-orange-500 mb-2"></i>
-                            <p class="text-sm font-semibold">Compute Services</p>
-                        </div>
-                        <div class="bg-white p-4 rounded-lg">
-                            <i class="fas fa-database text-orange-500 mb-2"></i>
-                            <p class="text-sm font-semibold">Storage & DB</p>
-                        </div>
-                        <div class="bg-white p-4 rounded-lg">
-                            <i class="fas fa-network-wired text-orange-500 mb-2"></i>
-                            <p class="text-sm font-semibold">Networking</p>
-                        </div>
-                        <div class="bg-white p-4 rounded-lg">
-                            <i class="fas fa-shield-alt text-orange-500 mb-2"></i>
-                            <p class="text-sm font-semibold">Security</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl shadow-lg p-8 card-hover">
-                    <div class="flex items-center mb-6">
-                        <div class="bg-blue-600 w-16 h-16 rounded-lg flex items-center justify-center mr-4">
-                            <i class="fab fa-microsoft text-3xl text-white"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-900">Microsoft Azure</h3>
-                    </div>
-                    <p class="text-gray-700 mb-6">
-                        Master Azure services including Virtual Machines, App Services, Azure Functions, AKS, Cosmos DB, and Azure DevOps for enterprise-grade solutions.
-                    </p>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-white p-4 rounded-lg">
-                            <i class="fas fa-cloud-upload-alt text-blue-600 mb-2"></i>
-                            <p class="text-sm font-semibold">Cloud Services</p>
-                        </div>
-                        <div class="bg-white p-4 rounded-lg">
-                            <i class="fas fa-project-diagram text-blue-600 mb-2"></i>
-                            <p class="text-sm font-semibold">Architecture</p>
-                        </div>
-                        <div class="bg-white p-4 rounded-lg">
-                            <i class="fas fa-sync-alt text-blue-600 mb-2"></i>
-                            <p class="text-sm font-semibold">DevOps</p>
-                        </div>
-                        <div class="bg-white p-4 rounded-lg">
-                            <i class="fas fa-lock text-blue-600 mb-2"></i>
-                            <p class="text-sm font-semibold">Governance</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-gradient-to-br from-red-50 to-yellow-50 rounded-xl shadow-lg p-8 card-hover">
-                <div class="flex items-center mb-6">
-                    <div class="bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500 w-16 h-16 rounded-lg flex items-center justify-center mr-4">
-                        <i class="fab fa-google text-3xl text-white"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900">Google Cloud Platform</h3>
-                </div>
-                <p class="text-gray-700 mb-6">
-                    Explore GCP services including Compute Engine, Cloud Run, GKE, BigQuery, and Cloud AI for building intelligent, scalable applications.
-                </p>
-                <div class="grid md:grid-cols-4 gap-4">
-                    <div class="bg-white p-4 rounded-lg text-center">
-                        <i class="fas fa-cube text-red-500 text-2xl mb-2"></i>
-                        <p class="text-sm font-semibold">Compute</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg text-center">
-                        <i class="fas fa-brain text-blue-500 text-2xl mb-2"></i>
-                        <p class="text-sm font-semibold">AI/ML</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg text-center">
-                        <i class="fas fa-chart-bar text-yellow-500 text-2xl mb-2"></i>
-                        <p class="text-sm font-semibold">Analytics</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg text-center">
-                        <i class="fas fa-shipping-fast text-green-500 text-2xl mb-2"></i>
-                        <p class="text-sm font-semibold">Containers</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AI Section -->
-    <section id="ai" class="py-20 px-4 sm:px-6 lg:px-8 section-gradient">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <div class="inline-block bg-purple-100 p-4 rounded-full mb-4">
-                    <i class="fas fa-robot text-5xl text-secondary"></i>
-                </div>
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Artificial Intelligence</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Unlock the potential of AI and Machine Learning in modern applications
-                </p>
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Content Categories</h2>
+                <p class="text-xl text-gray-600">Explore our organized collection of learning materials</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white rounded-xl shadow-lg p-8 card-hover text-center">
-                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-brain text-4xl text-secondary"></i>
+                <!-- Presentations -->
+                <div id="presentations" class="bg-white rounded-xl shadow-md p-8 card-hover">
+                    <div class="text-primary text-5xl mb-4">
+                        <i class="fas fa-file-powerpoint"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Machine Learning</h3>
-                    <p class="text-gray-600">
-                        Foundations of ML, supervised and unsupervised learning, model training, and evaluation.
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Presentations</h3>
+                    <p class="text-gray-600 mb-4">
+                        Training slide decks covering various topics in DevOps, Cloud, AI, and more.
                     </p>
+                    <a href="presentations/" class="inline-block bg-primary text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+                        Browse Decks <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                        <p class="text-sm text-gray-500">
+                            <i class="far fa-folder mr-2"></i>Location: <code class="bg-gray-100 px-2 py-1 rounded text-xs">/presentations</code>
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bg-white rounded-xl shadow-lg p-8 card-hover text-center">
-                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-project-diagram text-4xl text-secondary"></i>
+                <!-- Training Materials -->
+                <div id="training" class="bg-white rounded-xl shadow-md p-8 card-hover">
+                    <div class="text-green-600 text-5xl mb-4">
+                        <i class="fas fa-laptop-code"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Deep Learning</h3>
-                    <p class="text-gray-600">
-                        Neural networks, CNNs, RNNs, and transformers using TensorFlow and PyTorch.
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Training Materials</h3>
+                    <p class="text-gray-600 mb-4">
+                        Hands-on labs, tutorials, and comprehensive course content for practical learning.
                     </p>
+                    <a href="training-materials/" class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition">
+                        Start Learning <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                        <p class="text-sm text-gray-500">
+                            <i class="far fa-folder mr-2"></i>Location: <code class="bg-gray-100 px-2 py-1 rounded text-xs">/training-materials</code>
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bg-white rounded-xl shadow-lg p-8 card-hover text-center">
-                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-comments text-4xl text-secondary"></i>
+                <!-- Blog Posts -->
+                <div id="blogs" class="bg-white rounded-xl shadow-md p-8 card-hover">
+                    <div class="text-secondary text-5xl mb-4">
+                        <i class="fas fa-blog"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">NLP & LLMs</h3>
-                    <p class="text-gray-600">
-                        Natural language processing, GPT models, prompt engineering, and LangChain.
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Blog Posts</h3>
+                    <p class="text-gray-600 mb-4">
+                        Technical articles, insights, and thought leadership on emerging technologies.
                     </p>
+                    <a href="blogs/" class="inline-block bg-secondary text-white px-6 py-2 rounded-lg hover:bg-purple-800 transition">
+                        Read Articles <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                        <p class="text-sm text-gray-500">
+                            <i class="far fa-folder mr-2"></i>Location: <code class="bg-gray-100 px-2 py-1 rounded text-xs">/blogs</code>
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bg-white rounded-xl shadow-lg p-8 card-hover text-center">
-                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-cloud-upload-alt text-4xl text-secondary"></i>
+                <!-- Resources -->
+                <div id="resources" class="bg-white rounded-xl shadow-md p-8 card-hover">
+                    <div class="text-accent text-5xl mb-4">
+                        <i class="fas fa-toolbox"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">MLOps</h3>
-                    <p class="text-gray-600">
-                        Model deployment, monitoring, versioning, and scaling AI systems in production.
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Resources</h3>
+                    <p class="text-gray-600 mb-4">
+                        Reference guides, tools, scripts, and additional learning resources.
                     </p>
-                </div>
-            </div>
-
-            <div class="mt-12 bg-white rounded-xl shadow-lg p-8">
-                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">AI Technologies Covered</h3>
-                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-                    <div class="flex flex-col items-center">
-                        <div class="bg-purple-50 p-4 rounded-lg mb-2">
-                            <i class="fab fa-python text-3xl text-blue-600"></i>
-                        </div>
-                        <span class="text-sm font-semibold text-gray-700">Python</span>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div class="bg-purple-50 p-4 rounded-lg mb-2">
-                            <i class="fas fa-fire text-3xl text-orange-600"></i>
-                        </div>
-                        <span class="text-sm font-semibold text-gray-700">PyTorch</span>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div class="bg-purple-50 p-4 rounded-lg mb-2">
-                            <i class="fas fa-cube text-3xl text-orange-500"></i>
-                        </div>
-                        <span class="text-sm font-semibold text-gray-700">TensorFlow</span>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div class="bg-purple-50 p-4 rounded-lg mb-2">
-                            <i class="fas fa-chart-line text-3xl text-green-600"></i>
-                        </div>
-                        <span class="text-sm font-semibold text-gray-700">Scikit-learn</span>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div class="bg-purple-50 p-4 rounded-lg mb-2">
-                            <i class="fas fa-link text-3xl text-purple-600"></i>
-                        </div>
-                        <span class="text-sm font-semibold text-gray-700">LangChain</span>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div class="bg-purple-50 p-4 rounded-lg mb-2">
-                            <i class="fas fa-microchip text-3xl text-indigo-600"></i>
-                        </div>
-                        <span class="text-sm font-semibold text-gray-700">Hugging Face</span>
+                    <a href="resources/" class="inline-block bg-accent text-white px-6 py-2 rounded-lg hover:bg-yellow-600 transition">
+                        View Resources <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                        <p class="text-sm text-gray-500">
+                            <i class="far fa-folder mr-2"></i>Location: <code class="bg-gray-100 px-2 py-1 rounded text-xs">/resources</code>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Security Section -->
-    <section id="security" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <!-- Topics Covered -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <div class="inline-block bg-red-100 p-4 rounded-full mb-4">
-                    <i class="fas fa-shield-alt text-5xl text-red-600"></i>
-                </div>
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Security</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Build secure systems with DevSecOps practices and security best practices
-                </p>
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Topics Covered</h2>
+                <p class="text-xl text-gray-600">Comprehensive coverage across multiple technology domains</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8 mb-12">
-                <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-xl shadow-lg p-8 card-hover">
-                    <div class="bg-red-500 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-user-shield text-3xl text-white"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">DevSecOps</h3>
-                    <p class="text-gray-700 mb-4">
-                        Integrate security throughout the development lifecycle with automated security testing and compliance.
-                    </p>
-                    <ul class="space-y-2 text-gray-700">
-                        <li class="flex items-center">
-                            <i class="fas fa-check-circle text-red-500 mr-2"></i>
-                            <span>Security scanning</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check-circle text-red-500 mr-2"></i>
-                            <span>Vulnerability management</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check-circle text-red-500 mr-2"></i>
-                            <span>Compliance automation</span>
-                        </li>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+                        <i class="fas fa-infinity text-primary mr-3 text-2xl"></i>
+                        DevOps
+                    </h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li><i class="fas fa-check text-primary mr-2"></i>CI/CD Pipelines</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Containerization (Docker)</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Kubernetes</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Infrastructure as Code</li>
                     </ul>
                 </div>
 
-                <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl shadow-lg p-8 card-hover">
-                    <div class="bg-yellow-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-lock text-3xl text-white"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Cloud Security</h3>
-                    <p class="text-gray-700 mb-4">
-                        Secure your cloud infrastructure with IAM, encryption, network security, and monitoring.
-                    </p>
-                    <ul class="space-y-2 text-gray-700">
-                        <li class="flex items-center">
-                            <i class="fas fa-check-circle text-yellow-600 mr-2"></i>
-                            <span>Identity & Access</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check-circle text-yellow-600 mr-2"></i>
-                            <span>Data encryption</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check-circle text-yellow-600 mr-2"></i>
-                            <span>Security monitoring</span>
-                        </li>
+                <div class="bg-gradient-to-br from-cyan-50 to-cyan-100 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+                        <i class="fas fa-cloud text-cyan-600 mr-3 text-2xl"></i>
+                        Cloud Computing
+                    </h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li><i class="fas fa-check text-cyan-600 mr-2"></i>AWS Services</li>
+                        <li><i class="fas fa-check text-cyan-600 mr-2"></i>Azure Platform</li>
+                        <li><i class="fas fa-check text-cyan-600 mr-2"></i>Google Cloud Platform</li>
+                        <li><i class="fas fa-check text-cyan-600 mr-2"></i>Multi-Cloud Strategies</li>
                     </ul>
                 </div>
 
-                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl shadow-lg p-8 card-hover">
-                    <div class="bg-indigo-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-bug text-3xl text-white"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Security Testing</h3>
-                    <p class="text-gray-700 mb-4">
-                        Learn penetration testing, security audits, and vulnerability assessment techniques.
-                    </p>
-                    <ul class="space-y-2 text-gray-700">
-                        <li class="flex items-center">
-                            <i class="fas fa-check-circle text-indigo-600 mr-2"></i>
-                            <span>Penetration testing</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check-circle text-indigo-600 mr-2"></i>
-                            <span>Code analysis</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check-circle text-indigo-600 mr-2"></i>
-                            <span>Security audits</span>
-                        </li>
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+                        <i class="fas fa-brain text-secondary mr-3 text-2xl"></i>
+                        Artificial Intelligence
+                    </h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li><i class="fas fa-check text-secondary mr-2"></i>Machine Learning</li>
+                        <li><i class="fas fa-check text-secondary mr-2"></i>Deep Learning</li>
+                        <li><i class="fas fa-check text-secondary mr-2"></i>MLOps</li>
+                        <li><i class="fas fa-check text-secondary mr-2"></i>Natural Language Processing</li>
                     </ul>
                 </div>
-            </div>
 
-            <div class="bg-gray-900 rounded-xl shadow-lg p-8 text-white">
-                <h3 class="text-2xl font-bold mb-6 text-center">Security Best Practices</h3>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="flex items-start">
-                        <i class="fas fa-certificate text-yellow-400 text-2xl mr-4 mt-1"></i>
-                        <div>
-                            <h4 class="font-semibold text-lg mb-2">Zero Trust Architecture</h4>
-                            <p class="text-gray-300">Never trust, always verify - implement least privilege access</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <i class="fas fa-key text-yellow-400 text-2xl mr-4 mt-1"></i>
-                        <div>
-                            <h4 class="font-semibold text-lg mb-2">Secrets Management</h4>
-                            <p class="text-gray-300">Secure handling of credentials using Vault, KMS, and secrets managers</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <i class="fas fa-eye text-yellow-400 text-2xl mr-4 mt-1"></i>
-                        <div>
-                            <h4 class="font-semibold text-lg mb-2">Security Monitoring</h4>
-                            <p class="text-gray-300">Real-time threat detection and incident response</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <i class="fas fa-clipboard-check text-yellow-400 text-2xl mr-4 mt-1"></i>
-                        <div>
-                            <h4 class="font-semibold text-lg mb-2">Compliance</h4>
-                            <p class="text-gray-300">Meet industry standards - SOC2, ISO 27001, GDPR, HIPAA</p>
-                        </div>
-                    </div>
+                <div class="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+                        <i class="fas fa-shield-alt text-red-600 mr-3 text-2xl"></i>
+                        Security
+                    </h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li><i class="fas fa-check text-red-600 mr-2"></i>DevSecOps</li>
+                        <li><i class="fas fa-check text-red-600 mr-2"></i>Cloud Security</li>
+                        <li><i class="fas fa-check text-red-600 mr-2"></i>Security Testing</li>
+                        <li><i class="fas fa-check text-red-600 mr-2"></i>Compliance</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+                        <i class="fas fa-network-wired text-green-600 mr-3 text-2xl"></i>
+                        Infrastructure
+                    </h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Infrastructure as Code</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Observability</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Networking</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>High Availability</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+                        <i class="fas fa-code text-accent mr-3 text-2xl"></i>
+                        Best Practices
+                    </h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li><i class="fas fa-check text-accent mr-2"></i>Architecture Patterns</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Code Quality</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Testing Strategies</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Performance Optimization</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Infrastructure Section -->
-    <section id="infrastructure" class="py-20 px-4 sm:px-6 lg:px-8 section-gradient">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <div class="inline-block bg-green-100 p-4 rounded-full mb-4">
-                    <i class="fas fa-server text-5xl text-green-600"></i>
+    <!-- Contributing Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+                <div class="text-5xl text-primary mb-6">
+                    <i class="fas fa-hands-helping"></i>
                 </div>
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Infrastructure</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Build scalable, resilient infrastructure with modern tools and practices
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contribute to This Portal</h2>
+                <p class="text-xl text-gray-600 mb-8">
+                    Help grow this knowledge base by contributing your training materials, presentations, or blog posts.
                 </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                    <div class="flex items-center mb-6">
-                        <div class="bg-green-100 w-16 h-16 rounded-lg flex items-center justify-center mr-4">
-                            <i class="fas fa-sitemap text-3xl text-green-600"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-900">Infrastructure as Code</h3>
-                    </div>
-                    <p class="text-gray-700 mb-6">
-                        Master infrastructure automation using Terraform, CloudFormation, Pulumi, and ARM templates for consistent, repeatable deployments.
-                    </p>
-                    <div class="space-y-3">
-                        <div class="flex items-center bg-gray-50 p-3 rounded-lg">
-                            <i class="fas fa-cube text-green-600 mr-3"></i>
-                            <span class="font-semibold">Terraform Enterprise</span>
-                        </div>
-                        <div class="flex items-center bg-gray-50 p-3 rounded-lg">
-                            <i class="fas fa-file-code text-green-600 mr-3"></i>
-                            <span class="font-semibold">CloudFormation</span>
-                        </div>
-                        <div class="flex items-center bg-gray-50 p-3 rounded-lg">
-                            <i class="fas fa-layer-group text-green-600 mr-3"></i>
-                            <span class="font-semibold">Pulumi</span>
-                        </div>
-                    </div>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="CONTRIBUTING.md" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition shadow-lg">
+                        <i class="fas fa-book-reader mr-2"></i>Contributing Guide
+                    </a>
+                    <a href="https://github.com/chefgs/devops-cloud-ai-sessions" target="_blank" class="bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-900 transition shadow-lg">
+                        <i class="fab fa-github mr-2"></i>View on GitHub
+                    </a>
                 </div>
-
-                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                    <div class="flex items-center mb-6">
-                        <div class="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mr-4">
-                            <i class="fas fa-chart-line text-3xl text-blue-600"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-900">Observability</h3>
-                    </div>
-                    <p class="text-gray-700 mb-6">
-                        Implement comprehensive monitoring, logging, and tracing with Prometheus, Grafana, ELK Stack, and distributed tracing tools.
-                    </p>
-                    <div class="space-y-3">
-                        <div class="flex items-center bg-gray-50 p-3 rounded-lg">
-                            <i class="fas fa-chart-area text-blue-600 mr-3"></i>
-                            <span class="font-semibold">Metrics & Monitoring</span>
-                        </div>
-                        <div class="flex items-center bg-gray-50 p-3 rounded-lg">
-                            <i class="fas fa-file-alt text-blue-600 mr-3"></i>
-                            <span class="font-semibold">Centralized Logging</span>
-                        </div>
-                        <div class="flex items-center bg-gray-50 p-3 rounded-lg">
-                            <i class="fas fa-route text-blue-600 mr-3"></i>
-                            <span class="font-semibold">Distributed Tracing</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl shadow-lg p-8 card-hover text-center">
-                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-network-wired text-4xl text-purple-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Networking</h3>
-                    <p class="text-gray-600">
-                        VPCs, subnets, load balancers, DNS, CDN, and service mesh architectures.
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-lg p-8 card-hover text-center">
-                    <div class="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-database text-4xl text-orange-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Data Management</h3>
-                    <p class="text-gray-600">
-                        Database design, backup strategies, disaster recovery, and data replication.
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-lg p-8 card-hover text-center">
-                    <div class="bg-red-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-balance-scale text-4xl text-red-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">High Availability</h3>
-                    <p class="text-gray-600">
-                        Design fault-tolerant systems with auto-scaling, failover, and load balancing.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8 gradient-bg">
-        <div class="max-w-4xl mx-auto text-center text-white">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Level Up Your Skills?</h2>
-            <p class="text-xl mb-8 text-purple-100">
-                Join thousands of professionals who have transformed their careers with CloudEngine Labs training sessions.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition shadow-lg">
-                    Get Started Today
-                </a>
-                <a href="#" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition">
-                    View All Sessions
-                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+    <footer class="bg-gray-900 text-white py-8 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <div>
-                    <h3 class="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">CloudEngine Labs</h3>
-                    <p class="text-gray-400 mb-4">
-                        Empowering professionals with cutting-edge technology training.
+                    <h3 class="text-xl font-bold mb-4">Training Content Portal</h3>
+                    <p class="text-gray-400">
+                        Consolidated learning resources for DevOps, Cloud, and AI technologies.
                     </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin text-xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter text-xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fas fa-globe text-xl"></i></a>
-                    </div>
                 </div>
                 <div>
-                    <h4 class="font-semibold text-lg mb-4">Topics</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#devops" class="text-gray-400 hover:text-white transition">DevOps</a></li>
-                        <li><a href="#cloud" class="text-gray-400 hover:text-white transition">Cloud Computing</a></li>
-                        <li><a href="#ai" class="text-gray-400 hover:text-white transition">Artificial Intelligence</a></li>
-                        <li><a href="#security" class="text-gray-400 hover:text-white transition">Security</a></li>
-                        <li><a href="#infrastructure" class="text-gray-400 hover:text-white transition">Infrastructure</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-lg mb-4">Resources</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Documentation</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Tutorials</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Community</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
                     <ul class="space-y-2 text-gray-400">
-                        <li class="flex items-center">
-                            <i class="fas fa-envelope mr-2"></i>
-                            <span>gsaravanan.dev</span>
+                        <li><a href="#presentations" class="hover:text-white transition">Presentations</a></li>
+                        <li><a href="#training" class="hover:text-white transition">Training Materials</a></li>
+                        <li><a href="#blogs" class="hover:text-white transition">Blog Posts</a></li>
+                        <li><a href="#resources" class="hover:text-white transition">Resources</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>
+                            <a href="https://gsaravanan.dev" target="_blank" class="hover:text-white transition">
+                                <i class="fas fa-globe mr-2"></i>gsaravanan.dev
+                            </a>
                         </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-building mr-2"></i>
-                            <span>CloudEngine Labs</span>
+                        <li>
+                            <a href="https://github.com/chefgs/devops-cloud-ai-sessions" target="_blank" class="hover:text-white transition">
+                                <i class="fab fa-github mr-2"></i>GitHub Repository
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fas fa-building mr-2"></i>CloudEngine Labs
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 CloudEngine Labs. All rights reserved. | Founded by Saravanan Gnanaguru</p>
+                <p>&copy; 2026 Saravanan Gnanaguru. Licensed under the MIT License.</p>
+                <p class="mt-2 text-sm">This is a training content portal, not a portfolio website.</p>
             </div>
         </div>
     </footer>
@@ -773,28 +394,14 @@
     <!-- Mobile Menu Toggle Script -->
     <script>
         document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
         });
 
-        // Close mobile menu when clicking a link
+        // Close mobile menu when clicking on a link
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', function() {
                 document.getElementById('mobile-menu').classList.add('hidden');
-            });
-        });
-
-        // Smooth scroll for all anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
             });
         });
     </script>

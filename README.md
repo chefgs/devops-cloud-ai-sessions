@@ -1,25 +1,49 @@
-# DevOps, Cloud & AI Sessions - CloudEngine Labs
+# DevOps, Cloud & AI Training Content Portal
 
-Professional training website for Saravanan Gnanaguru (gsaravanan.dev), Founder of CloudEngine Labs.
+This is a **consolidated training content portal** for Saravanan Gnanaguru, hosting all training materials, presentations, blog posts, and resources related to DevOps, Cloud Computing, and Artificial Intelligence.
 
-## About
+## About This Portal
 
-This website consolidates all the training sessions and expertise of Saravanan Gnanaguru covering:
-- **DevOps**: CI/CD Pipelines, Containerization, Infrastructure as Code
-- **Cloud Computing**: AWS, Azure, Google Cloud Platform
-- **Artificial Intelligence**: Machine Learning, Deep Learning, NLP, MLOps
-- **Security**: DevSecOps, Cloud Security, Security Testing
-- **Infrastructure**: IaC, Observability, Networking, High Availability
+This repository serves as a centralized reference portal for accessing:
+- **PPT Decks**: Presentation slides from training sessions
+- **Training Materials**: Hands-on labs, tutorials, and course content
+- **Blog Posts**: Technical articles and insights
+- **Resources**: Additional learning materials, references, and tools
 
-## Viewing the Website
+**Note**: This is NOT a portfolio website. It's a training content repository designed to help learners access consolidated learning materials.
 
-Simply open `index.html` in your web browser to view the website locally, or deploy it to any web hosting service.
+## About Saravanan Gnanaguru
+
+Saravanan Gnanaguru (gsaravanan.dev) is the Founder of CloudEngine Labs, providing world-class training and consulting in:
+- DevOps: CI/CD, Containerization, Infrastructure as Code
+- Cloud Computing: AWS, Azure, Google Cloud Platform
+- Artificial Intelligence: Machine Learning, MLOps, NLP
+- Security: DevSecOps, Cloud Security
+- Infrastructure: IaC, Observability, Networking
+
+## Content Structure
+
+```
+├── presentations/       # Training presentation decks
+├── training-materials/  # Course content and labs
+├── blogs/              # Technical articles and posts
+├── resources/          # Additional learning resources
+└── index.html          # Portal home page
+```
+
+## Accessing the Portal
+
+Visit the portal by opening `index.html` in your web browser or by visiting the hosted version.
 
 ### Local Development
 
 1. Clone this repository
-2. Open `index.html` in your web browser, or
-3. Use a local web server:
+   ```bash
+   git clone https://github.com/chefgs/devops-cloud-ai-sessions.git
+   cd devops-cloud-ai-sessions
+   ```
+
+2. Open `index.html` in your browser, or use a local web server:
    ```bash
    # Using Python
    python3 -m http.server 8080
@@ -27,28 +51,13 @@ Simply open `index.html` in your web browser to view the website locally, or dep
    # Using Node.js
    npx serve
    ```
-4. Navigate to `http://localhost:8080`
 
-## Features
+3. Navigate to `http://localhost:8080`
 
-- **Modern Design**: Clean, professional layout inspired by top learning platforms
-- **Responsive**: Fully responsive design that works on all devices
-- **Smooth Navigation**: Smooth scrolling and mobile-friendly menu
-- **Tailwind CSS**: Built with Tailwind CSS for modern styling
-- **Engaging Sections**: Dedicated sections for each technology domain
-- **Accessibility**: Semantic HTML and accessible design
+## Contributing
 
-## Technologies Used
+If you'd like to contribute content or report issues, please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-- HTML5
-- Tailwind CSS (via CDN)
-- Font Awesome Icons
-- JavaScript (for interactive navigation)
+## License
 
-## About Saravanan Gnanaguru
-
-Saravanan Gnanaguru is a seasoned technology leader and the founder of CloudEngine Labs, dedicated to providing world-class training and consulting in DevOps, Cloud Computing, Artificial Intelligence, Security, and Infrastructure. His pedagogy-driven approach makes complex technical concepts accessible to learners at all levels.
-
----
-
-© 2024 CloudEngine Labs. All rights reserved. | Founded by Saravanan Gnanaguru
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
